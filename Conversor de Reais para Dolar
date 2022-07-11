@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include <locale.h>
+
+int main(){
+	
+	float Quantia, Dolar, Conversao;
+
+    setlocale(LC_ALL, "Portuguese");
+    
+    printf("BEM-VINDO AO CONVERSOR DE REAIS PARA DÓLAR!");
+    printf("\n\nQuantia em Reais: R$");
+    scanf("%f", &Quantia);
+    fflush(stdin);
+    
+    printf("Cotação do dólar hoje: US$");
+    scanf("%f", &Dolar);
+    fflush(stdin);
+    
+    printf("A conversão resultará em: R$%.2f\n", Conversao = Quantia / Dolar);
+    
+    system("pause");
+    return 0;
+    
+}
